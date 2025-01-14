@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="bar-container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Course Listing</a></li>
+                <li><a href="">Course Schedule</a></li>
+                <li><a href="">Course Roadmap</a></li>
+            </ul>
+        </nav>
+
+        <div class="information-bar">
+            <p id="help" class="circular-button">help</p>
+            <p id="translate" class="circular-button">translate</p>
+            <p id="dark-mode" class="circular-button">dark-mode</p>
+            <p id="student-info">
+                <span>dbalstjr16@gmail.com</span>
+                <span>[20020905]</span>
+            </p>
+            <p id="logout" class="circular-button">logout</p>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="main-container">
+        <div class="left-container">
+            <div id="search_box">
+                <h3>Search</h3>
+                <input type="text" id="search_textbox" placeholder="Course Name"></input>
+            </div>
+
+            <div id="search_option_container">
+                <div class="dropdown">
+                    <button class="dropdown-button" id="breadthButton" onclick="toggleDropdown('breadth-content')">Breadth</button>
+                    <div class="content breadth-content">
+                        <input type="checkbox" id="checkbox1_breadth1">
+                        <label for="checkbox1_breadth1">Literature</label>
+
+                        <input type="checkbox" id="checkbox1_breadth2">
+                        <label for="checkbox1_breadth2">Science</label>
+
+                        <input type="checkbox" id="checkbox1_breadth3">
+                        <label for="checkbox1_breadth3">Arts</label>
+
+                        <input type="checkbox" id="checkbox1_breadth4">
+                        <label for="checkbox1_breadth4">P.E.</label>
+                        
+                        <input type="checkbox" id="checkbox1_breadth5">
+                        <label for="checkbox1_breadth5">Humanities</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button" id="creditsButton" onclick="toggleDropdown('credits-content')">Credits</button>
+                    <div class="content credits-content">
+                        <input type="checkbox" id="checkbox1_credits1">
+                        <label for="checkbox1_credits1">1 Credit</label>
+                        <input type="checkbox" id="checkbox1_credits2">
+                        <label for="checkbox1_credits2">2 Credits</label>
+                        <input type="checkbox" id="checkbox1_credits3">
+                        <label for="checkbox1_credits3">3 Credits</label>
+                    </div>
+                </div>                
+            </div>
+            
+            
+
+            <div class="button-container">
+                <button>clear</button>
+                <button>update</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="dynamic-table"></table>
+        </div>
+
+    </div>
+
+    <script src="course_listing.js"></script>
+</body>
+
+</html>

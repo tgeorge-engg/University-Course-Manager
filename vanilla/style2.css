@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+/* General Body Styling */
+body {
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
+}
+
+.bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+    list-style-type: none;
+    background-color: darkgrey;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid black;
+    display: inline-block;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background-color: #999999ab;
+}
+
+.navbar li {
+    float: left;
+}
+
+.information-bar{
+    display: flex;
+    height: auto;
+    min-width: 20vw;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 500px;
+}
+
+.information-bar .circular-button {
+    background-color: #999999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    border: 1px solid black;
+    width: 50px; /* Set equal width and height */
+    height: 50px; /* Set equal width and height */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+    padding: 40px;
+}
+
+.information-bar #student-info{
+    background-color: #999999;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    padding: 10px;
+}
+
+.information-bar .circular-button:hover{
+    background-color: #999999ab;
+}
+
+/* Layout for Main Container */
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Left Container Styling */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Search Box Styling */
+#search_box {
+    border: 1px solid black;
+    background-color: darkgrey;
+    width: 320px;
+    height: 98px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#search_box h3{
+    margin-top: 5px;
+}
+
+#search_textbox{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 5px 5px;
+}
+
+/* Search Option Container */
+#search_option_container {
+    border: 1px solid black;
+    background-color: grey;
+    width: 320px;
+    height: 78vh;
+    position: relative;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: block;
+    position: relative;
+}
+
+.dropdown button {
+    background-color: #999999;
+    text-align: left;
+    width: 100%;
+    color: black;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown button:hover{
+    background-color: #999999ab;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #ECECEC;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    left: 0;
+    top: 100%;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.dropdown .content label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Active Dropdown Content Styling */
+.dropdown .content.active {
+    display: block;
+}
+
+/* Table Styling */
+.table-container {
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+table {
+    width: 86vw;
+    height: 90vh;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #999999;
+}
+
+td {
+    background-color: #ECECEC;
+}
+
+#label_row {
+    background-color: #999999;
+}
+
+.value_row {
+    background-color: #ECECEC;
+}
+
+th {
+    width: 100px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.button-container button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-button{
+    height: 4rem;
+}
+
+@media (max-width: 1600px) {
+    .information-bar{
+        display: none;
+    }
+}

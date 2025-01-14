@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Course Listing</a></li>
+            <li><a href="">Course Schedule</a></li>
+            <li><a href="">Course Roadmap</a></li>
+        </ul>
+
+        <div class="navbar-buttons">
+            <button class="nav-btn">Help</button>
+            <button class="nav-btn">Dark Mode</button>
+            <button class="nav-btn">Translate</button>
+            <p class="nav_student_name">
+                <span style="display: block;">Minsuk You</span>
+                <span style="display: block;">dbalstjr16@gmail.com</span>
+            </p>
+            <button class="nav-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main_container">
+        <div class="left_container">
+            <div id="saved_courses_title">
+                <h2>My Saved Courses</h2>
+            </div>
+            <div id="saved_courses">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1" class="checkbox">
+                        CS101<br>
+                        Monday, Wednesday<br>
+                        08:00~09:00
+                    </label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2" class="checkbox">
+                        CS201<br>
+                        Tuesday, Thursday<br>
+                        10:00~11:30
+                    </label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3" class="checkbox">
+                        CS301<br>
+                        Friday<br>
+                        14:00~15:30
+                    </label>
+                </div>
+            </div>
+
+            <div id="pagination_container">
+                <div class="pagination">
+                    <a href=""><</a>
+                    <a href="" class="active">M</a>
+                    <a href="">T</a>
+                    <a href="">W</a>
+                    <a href="">R</a>
+                    <a href="">F</a>
+                    <a href="">></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="course_table">
+            <table id="dynamic-table"></table>
+        </div>
+    </div>
+
+    <script src="course_scheduler.js"></script>
+</body>
+
+</html>

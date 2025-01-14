@@ -1,0 +1,207 @@
+body {
+    background-color: #d9d9d9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    float: none;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+.navbar a:hover {
+    background-color: hsl(0, 0%, 61%);
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px; /* Adjust spacing to align with navbar layout */
+}
+
+.nav-btn {
+    background-color: #d9d9d9;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: grey;
+    color: white;
+}
+
+/*Name of the Student*/
+.nav_student_name {
+    border: 1px solid black;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.main_container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.left_container{
+    display: flex;
+    flex-direction: column;
+}
+.left_container h2{
+    margin-top: -3px;
+}
+#saved_courses_title{
+    border: 1px solid black;
+    background-color: #999999;
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+#saved_courses{
+    border: 1px solid black;
+    background-color: #ececec;
+    width: 320px;
+    height: 80vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#course_table{
+    border: 1px solid black;
+    width: 320px;
+    height: 98px;
+    
+    background-color: black;
+}
+
+.course_table {
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 1px solid black;
+}
+table {
+    width: 86vw;
+    height: 90vh;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black; /* Adds lines between rows and columns */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #999999;
+}
+
+td {
+    background-color: #ECECEC;
+}
+
+#label_row {
+    background-color: 999999;
+}
+
+.value_row {
+    background-color: #ECECEC;
+}
+
+th {
+    width: 100px;
+}
+
+#saved_courses {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Add spacing between each checkbox-container */
+}
+
+.checkbox-container {
+    display: flex; /* Align checkbox and label side by side */
+    align-items: center; /* Vertically center the checkbox and text */
+    gap: 10px; /* Add spacing between checkbox and text */
+}
+
+/* Styling the checkbox */
+input[type="checkbox"] {
+    width: 25px; /* Adjust width */
+    height: 25px; /* Adjust height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling the label */
+.checkbox {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #333; /* Optional: Adjust text color */
+}
+
+
+
+.button-container {
+    display: flex; /* Use Flexbox for button alignment */
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Add space above the buttons */
+}
+
+.button-container button {
+    margin-left: 10px; /* Add space between the buttons */
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 16px; /* Optional: Adjust font size */
+}
+
+.pagination{  
+    margin-top: 10px;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 14px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: rgb(145, 145, 145);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: grey;
+    border-radius: 10px
+}
+
+#pagination_container{
+    display: flex;
+    justify-content: center;
+}
